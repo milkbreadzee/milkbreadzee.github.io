@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>ZEE!!</title>
+</head>
+<style>
+    
+    
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.container{
+width:100%;
+height:100vh;
+display:flex;
+background-color:#d8ebca;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+place-items:center;
+}
+img {
+            float: left; 
+            margin: 9px;
+}
+a {
+  color: #84a986;
+}
+.head{
+    font-size: 30px;
+    color:#4bb332;
+    letter-spacing: 2px;
+    font-family: Cabin,'Courier New', Courier, monospace;
+}
+p{
+    font-size: 15px;
+    color: #4bb332;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    text-align:center;
+    
+    
+}
+.button {
+  font-family:'Times New Roman', Times, serif;
+  text-decoration: none;
+  background-image: linear-gradient(to right,#ee9ca7,#ffdde1 );
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-radius: 20px;
+}
+.hearts{
+    font-size: 14px;
+    color: #4bb332;
+    position: fixed;
+    top: -1vh;
+    transform: translateY(0%);
+    left: 0;
+    animation: fall 1s ease-in infinite;
+
+}
+.number{
+    font-size: 10px;
+    color: #4bb332;
+    position: fixed;
+    top: -1vh;
+    transform: translateY(0%);
+    left: 0;
+    animation: fall 1s ease-in infinite;
+
+}
+@keyframes fall {
+    to{
+        transform: translateY(250vh);
+
+    }
+}
+div {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    color: #4bb332;
+    letter-spacing: 3px;
+  background-color:#d8ebca;
+  width: 200px;
+  border: 3px dashed #5da17c;
+  padding: 12px;
+  margin: 0px;
+
+
+
+</style>
+<body>
+    
+
+    <div class ="container">
+    <h1 class = "head"><em>ZEE!!</em></h1>
+    <br>
+    <!--<h1 class ="head" > ♡♡♡</h1>-->
+    
+    <p><img src = https://i.pinimg.com/564x/4f/7c/8d/4f7c8dd00cfe90c76528a1fb9385cd46.jpg style="width:100px;height:100px;">
+        
+        17 brown🥛˚ ❥
+        <br>genderfluid
+        <br>demigirl 𓍊𓋼𓍊𓋼
+        
+
+    </p>
+    <a href = "https://www.instagram.com/f4iry_wh0r4/"> insta</a>
+    <a href = "http://linkedin.com/in/uwuzee"> linkedin</a>
+    <br>
+    <div> 🍄they/them <3 <br>
+        🩰 1st year CS student MEC<br> 🕸️ IEDC marketing trainee <br> 
+        </div>
+        <br>
+        
+        <img src="https://64.media.tumblr.com/e45c8286cb4b86fd9279ed7ec5c772c6/19ab64d3c8dad23f-1b/s250x400/58cb088c20927cb115cd576818ff98587e3ce9ad.gifv">
+    <br>
+    <p>♡♡♡ 
+        <p>coding</p>
+        <p>webdev</p>
+        <p>gaming</p>
+    <p>♡♡♡</p>
+    <br>
+    <a href="https://zeeaboutme.w3spaces.com" class="button" style =" color:palevioletred; font-size: 12px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"> about me</a>
+
+    
+    <!--<h1 class ="head"> ♡♡♡</h1>-->
+    </div>
+    
+
+
+
+</body>
+<script>
+    function hearts()
+    {
+        const container = document.querySelector('.container')
+        const creat = document.createElement('diva');
+        creat.classList.add('hearts');
+        creat.innerHTML = '♡';
+        creat.style.left = Math.random() * 100 + 'vw';
+        creat.style.animationDuration = Math.random() * 30 +2 + 's';
+
+        container.appendChild(creat);
+        setTimeout( () => {
+            creat.remove();
+        }, 3000);
+        
+
+
+
+    }
+   
+    function number()
+    {
+        const container = document.querySelector('.container')
+        const creat = document.createElement('diva');
+        creat.classList.add('number');
+        creat.innerHTML = '🤍';
+        creat.style.left = Math.random() * 100 + 'vw';
+        creat.style.animationDuration = Math.random() * 30 +2 + 's';
+
+        container.appendChild(creat);
+        setTimeout( () => {
+            creat.remove();
+        }, 3000);
+        
+
+
+
+    }
+    setInterval( hearts ,100);
+    setInterval( number, 100);
+
+
+
+</script> 
+
+</html>
